@@ -1,0 +1,19 @@
+*   429706d (HEAD -> master, origin/master, origin/HEAD) Merge branch '7-count-t
+asks-per-category'
+|\
+| * 9ad37fb (origin/7-count-tasks-per-category, 7-count-tasks-per-category) impl
+ement countTaskPerCategory
+* |   d1a5778 Merge pull request #11 from Strahilll/4-sort-tasks-by-priority
+|\ \
+| * | e051987 (origin/4-sort-tasks-by-priority, 4-sort-tasks-by-priority) implem
+ent sortTasksByPriority
+| |/
+* |   c38b4f5 Merge pull request #10 from Strahilll/2-find-all-completed-tasks
+|\ \
+| |/
+|/|
+| * 9da359a (origin/2-find-all-completed-tasks, 2-find-all-completed-tasks) impl
+ement findAllCompletedTask
+|/
+* d5d5f68 add starter code.
+* 5b12004 initial commit

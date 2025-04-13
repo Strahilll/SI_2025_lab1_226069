@@ -1,0 +1,38 @@
+13. 
+git fetch origin
+git checkout 2-find-all-completed-tasks
+git fetch origin
+git checkout 4-sort-tasks-by-priority
+git fetch origin
+git checkout 7-count-tasks-per-category
+
+14.
+git checkout 2-find-all-completed-tasks 
+notepad SI2025Lab1Main.java
+return tasks.stream().filter(Task::isCompleted).toList();
+git add .
+git commit -m "implement findAllCompletedTask"
+git push origin 2-find-all-completed-tasks
+
+git checkout 4-sort-tasks-by-priority
+notepad SI2025Lab1Main.java
+tasks.sort(Comparator.comparing(Task::getPriority));
+git add .
+git commit -m "implement sortTasksByPriority"
+git push origin 4-sort-tasks-by-priority
+
+git checkout 7-count-tasks-per-category
+$ notepad SI2025Lab1Main.java
+return tasks.stream().collect(Collectors.groupingBy(Task::getCategory, Collectors.counting()));
+}
+git add .
+git commit -m "implement countTaskPerCategory"
+git push origin 7-count-tasks-per-category
+
+24.
+git pull origin master
+git merge 7-count-tasks-per-category
+git push origin master
+
+25.
+git log --oneline --graph --all
